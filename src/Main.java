@@ -3,6 +3,7 @@ import PhoneBook.PhoneBook;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 public class Main {
     public static void main(String[] args) {
@@ -12,7 +13,7 @@ public class Main {
         phoneBook.addContact("Temirlan", "87074546633", "work");
         phoneBook.addContact("Temirlan", "87074546633", "work");
 
-        List<Contact> result = phoneBook.foundByContactFragment("705");
+        Set<Contact> result = phoneBook.foundByContactFragment("747");
         for (Contact contact: result){
             System.out.println(contact.getName() + " " + contact.getNumber() + " " + contact.getGroup());
         }
